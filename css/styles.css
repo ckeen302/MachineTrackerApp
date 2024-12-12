@@ -1,0 +1,109 @@
+.root {
+    -fx-background-color: #2b2b2b;
+    -fx-font-family: "Arial";
+}
+
+.label {
+    -fx-text-fill: #f0f0f0;  /* Updated for better contrast */
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #444444;
+    -fx-text-fill: #f0f0f0;  /* Updated for better visibility */
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #555555;
+}
+
+.text-field {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: #ffffff;  /* Updated to ensure the text is visible */
+    -fx-border-color: #666666;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+}
+
+.combo-box {
+    -fx-background-color: #3b3b3b;
+    -fx-text-fill: #ffffff;  /* Updated to ensure the text is visible */
+    -fx-border-color: #666666;
+    -fx-border-radius: 5;
+}
+
+.table-view {
+    -fx-border-color: #444444;
+    -fx-background-color: #2b2b2b;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #f0f0f0;  /* Text color for cells in the table */
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header-background,
+.table-view .header-row {
+    -fx-background-color: #444444;  /* Darker background for the entire header section */
+}
+
+.table-view .table-column-header,
+.table-view .label {
+    -fx-background-color: #f0f0f0;  /* Background for individual headers */
+    -fx-text-fill: #444444;          /* Light text color for header text */
+    -fx-font-size: 14px;             /* Adjust the font size */
+    -fx-padding: 5;                  /* Add some padding */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #3a3a3a;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #2e2e2e;
+}
+
+.table-view:focused .table-row-cell:focused,
+.table-view .table-row-cell:selected {
+    -fx-background-color: #444444; /* Highlight selected row */
+    -fx-text-fill: #ffffff;  /* Ensure selected row text is visible */
+}
+
+.table-view .column-header .arrow {
+    -fx-background-color: #000000;  /* Changes the color of the arrow */
+}
+
+.table-view .column-header .arrow-button {
+    -fx-background-color: #444444;  /* Changes the background of the button that contains the arrow */
+    -fx-padding: 3;                  /* Adds some padding for better spacing */
+}
+
+.table-view .column-header .arrow .label {
+    -fx-text-fill: #f0f0f0;          /* Changes the color of any labels associated with the arrow (if applicable) */
+}
+
+.vbox {
+    -fx-border-color: #555555;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-background-color: #3b3b3b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 5, 0.2, 0.0, 0.0);
+}
+
+.button-primary {
+    -fx-background-color: #5a9f5e;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+
+.button-secondary {
+    -fx-background-color: #b94a48;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}

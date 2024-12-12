@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.machinetracker.ui.MainUIController"
+      spacing="10" alignment="CENTER" prefWidth="400" prefHeight="300">
+    <Label text="Machine Tracking App" style="-fx-font-size: 20px;"/>
+    <Button text="Manage Machines" fx:id="manageMachinesButton" onAction="#navigateToManageMachines"/>
+    <Button text="View Reports" fx:id="viewReportsButton"/>
+</VBox>

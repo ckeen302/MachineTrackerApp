@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.machinetracker.ui.AddMachineController"
+      stylesheets="@../css/styles.css"
+      spacing="10" alignment="CENTER" prefWidth="400" prefHeight="300"
+      style="-fx-padding: 10;">
+
+    <Label text="Add Machine" style="-fx-font-size: 20px;" />
+
+    <TextField fx:id="nameField" promptText="Name" />
+
+    <TextField fx:id="typeField" promptText="Type" />
+
+    <TextField fx:id="locationField" promptText="Location" />
+
+    <TextField fx:id="yearField" promptText="Year" />
+
+    <Button fx:id="uploadImageButton" text="Upload Image" onAction="#handleUploadImage" />
+    <ImageView fx:id="imagePreview" fitWidth="150" preserveRatio="true" />
+
+    <Button text="Save Machine" onAction="#handleSaveMachine" styleClass="button-primary" />
+    <Button text="Cancel" onAction="#handleCancel" styleClass="button-secondary" />
+</VBox>
